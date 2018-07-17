@@ -1,4 +1,4 @@
-set FOLDER=%HOMEDRIVE%\temp\awscodedeploy
+set FOLDER=c:\temp\awscodedeploy
 
 if exist %FOLDER% (
   rd /s /q "%FOLDER%"
