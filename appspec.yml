@@ -7,6 +7,10 @@ hooks:
   BeforeInstall:
     - location: .\scripts\before-install.bat
       timeout: 900
+    - location: .\scripts\StageArtifact.ps1
+      timeout: 900
+    - location: .\scripts\CreateWebSite.ps1
+      timeout: 900
   AfterInstall:
     - location: .\scripts\after-install.bat     
       timeout: 900

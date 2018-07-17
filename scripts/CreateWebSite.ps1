@@ -1,0 +1,1 @@
+New-WebApplication -Site "Default Web Site" -Name FirstDeploy -PhysicalPath C:\inetpub\wwwroot\FirstDeploy -Force
