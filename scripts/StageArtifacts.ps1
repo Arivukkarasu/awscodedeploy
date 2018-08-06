@@ -21,7 +21,7 @@ function GetWebArtifactFolderPath($path)
         if (Test-Path $item.FullName -PathType Container)
         {   
             # return the full path for the folder which contains Global.asax
-            if (Test-Path ($item.fullname + "\index.html"))
+            if (Test-Path ($item.fullname + "\Global.asax"))
             {
                 #$item.FullName
                 return $item.FullName;
@@ -31,6 +31,6 @@ function GetWebArtifactFolderPath($path)
     }
 }
 
-$path = GetWebArtifactFolderPath("c:\temp\awscodedeploy")
+$path = GetWebArtifactFolderPath("C:\temp\awscodedeploy")
 $path2 = $path + "\*"
 Copy-Item $path2 $target -recurse -force
