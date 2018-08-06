@@ -31,6 +31,6 @@ function GetWebArtifactFolderPath($path)
     }
 }
 
-$path = GetWebArtifactFolderPath("C:\temp\WebApp\FirstDeploy")
+$path = GetWebArtifactFolderPath("c:\temp\awscodedeploy")
 $path2 = $path + "\*"
 Copy-Item $path2 $target -recurse -force
