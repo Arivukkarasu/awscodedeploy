@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: .\install.txt
-    destination: c:\temp\CodeDeployExample
+  - source: \
+    destination: c:\temp\awscodedeploy
 hooks:
   BeforeInstall:
     - location: .\scripts\before-install.bat
